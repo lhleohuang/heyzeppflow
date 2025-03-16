@@ -34,7 +34,7 @@ arecord -r 16000 -c 1 -f S16_LE -t raw | \
 
 ## Notes on Dependencies and Tips for Converting the Inference Script to C
 
-The most important external python library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C, borrowed from the same tensorflow lite libraries (see below for notes on dependencies). The specifics are as folows.
+The most important external python library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C, borrowed from the same tensorflow lite libraries (see below for notes on dependencies). The specifics are as follows.
 
 inference.py imports pymicro_wakeword. pymicro_wakeword depends on tensorflow, numpy, and pymicro_features. [pymicro-features](https://github.com/rhasspy/pymicro-features) depends on [micro_features_cpp](https://github.com/rhasspy/pymicro-features/blob/master/pymicro_features/__init__.py) which is [compiled from tensorflow lite C libraries ](https://github.com/rhasspy/pymicro-features/blob/master/setup.py) and [repackaged into a python library](https://github.com/rhasspy/pymicro-features/blob/master/python.cpp). The tensorflow library in C, of which we only use tf.lite, can be found [here](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro). Numpy can be converted directly to C using elementary vector operations. The specific language for importing C libraries can be found on this page: [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/get_started).
 
