@@ -31,8 +31,10 @@ python -m pymicro_wakeword --config 'hey_zepp_flow' tests/hey_zepp_flow/01.wav
 arecord -r 16000 -c 1 -f S16_LE -t raw | \
   python -m pymicro_wakeword --config 'hey_zepp_flow'
 ```
-## Helpful Resources for Running the Model on Microcontrollers
+## Helpful Resources for Converting the Inference Script to C (and Running the Model on Microcontrollers)
 
 [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/get_started)
 
 [Sample Speech Recognition Model with TFLite](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech)
+
+The only external library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C.
