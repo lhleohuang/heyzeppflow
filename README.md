@@ -31,7 +31,9 @@ python -m pymicro_wakeword --config 'hey_zepp_flow' tests/hey_zepp_flow/01.wav
 arecord -r 16000 -c 1 -f S16_LE -t raw | \
   python -m pymicro_wakeword --config 'hey_zepp_flow'
 ```
-## Helpful Resources for Converting the Inference Script to C (and Running the Model on Microcontrollers)
+## Helpful Tips for Converting the Inference Script to C (and Running the Model on Microcontrollers)
+
+To get started and get an overview of the C libraries required for On-Board Inference:
 
 [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/get_started)
 
