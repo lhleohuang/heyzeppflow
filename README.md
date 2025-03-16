@@ -13,7 +13,7 @@ python -m pip install -e .
 
 Input audio must be 16-bit mono at 16Khz. 
 
-inference.py provides basic usage in python.
+inference.py provides basic usage in python. tests/test_microwakeword.py provides more test cases.
 
 ## Command-Line Usage
 
