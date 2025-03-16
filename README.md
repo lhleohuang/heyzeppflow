@@ -1,7 +1,7 @@
 # "Hey Zepp Flow" Wake Word Detectation
 
 ## Acknowledgment 
-This repo is based on OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. Users should refer to the former for details on running the model for inference, the latter for training similar models.
+This repo is based on OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. Users should refer to the former for details on running the model for inference, the latter for detials on the training process, and how live streaming works.
 
 ## Install 
 
@@ -40,3 +40,5 @@ To get started and for an overview of the C libraries required for on-board infe
 * [Sample Speech Recognition Model with TFLite](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech)
 
 The most important external python library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C.
+
+For more information on how live streaming works with the model, refer to kahrendt/microWakeWord.
