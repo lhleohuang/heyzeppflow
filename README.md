@@ -39,6 +39,10 @@ To get started and for an overview of the C libraries required for on-board infe
 
 * [Sample Speech Recognition Model with TFLite](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech)
 
-The most important external python library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C, borrowed from the same tensorflow lite libraries. 
+The most important external python library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C, borrowed from the same tensorflow lite libraries (see below for notes on dependencies).
 
 For more information on how live streaming works with the model, refer to kahrendt/microWakeWord.
+
+## Notes on Dependencies
+
+inference.py imports pymicro_wakeword. pymicro_wakeword depends on tensorflow, numpy, and pymicro_features. [pymicro-features](https://github.com/rhasspy/pymicro-features) depends on [micro_features_cpp](https://github.com/rhasspy/pymicro-features/blob/master/pymicro_features/__init__.py) which is [compiled from tensorflow lite C libraries ](https://github.com/rhasspy/pymicro-features/blob/master/setup.py) and [repackaged into a python library](https://github.com/rhasspy/pymicro-features/blob/master/python.cpp). The tensorflow library, of which we only use tf.lite, can be found [here](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite). Numpy can be converted directly to C using elementary vector operations. 
