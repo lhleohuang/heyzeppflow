@@ -1,12 +1,12 @@
 # "Hey Zepp Flow" Wake Word Detectation
 
 ## Acknowledgment 
-This is a repo cloned from OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. 
+This repo is based on OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. 
 
 ## Install 
 
 ``` sh
-pip install -e .
+python -m pip install -e .
 ```
 
 ## Python Usage 
@@ -17,15 +17,15 @@ inference.py provides basic usage in python.
 
 ## Command-Line Usage
 
-### WAVE files (Full- Context Mode)
+### Full-Context Mode (WAVE files)
 
 ``` sh
-python3 -m pymicro_wakeword --model 'okay_nabu' /path/to/*.wav
+python -m pymicro_wakeword --config 'hey_zepp_flow' tests/hey_zepp_flow/01.wav
 ```
 
 ### Live Streaming Mode
 
 ``` sh
 arecord -r 16000 -c 1 -f S16_LE -t raw | \
-  python3 -m pymicro_wakeword --model 'okay_nabu'
+  python -m pymicro_wakeword --config 'hey_zepp_flow'
 ```
