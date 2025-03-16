@@ -35,8 +35,8 @@ arecord -r 16000 -c 1 -f S16_LE -t raw | \
 
 To get started and get an overview of the C libraries required for On-Board Inference:
 
-[LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/get_started)
+* [LiteRT for Microcontrollers](https://ai.google.dev/edge/litert/microcontrollers/get_started)
 
-[Sample Speech Recognition Model with TFLite](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech)
+* [Sample Speech Recognition Model with TFLite](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech)
 
 The only external library used by our inference script is [pymicro-features](https://github.com/rhasspy/pymicro-features), which is in fact built from C.
