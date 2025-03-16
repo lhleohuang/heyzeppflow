@@ -6,7 +6,7 @@ This is a repo cloned from OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice
 ## Install 
 
 ``` sh
-pip3 install pymicro-wakeword
+pip install -e .
 ```
 
 ## Python Usage 
