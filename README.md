@@ -1,6 +1,6 @@
 # "Hey Zepp Flow" Wake Word Detectation
 
-## Acknowledgment 
+## Demo 
 Try it [here](https://cce7b0c85f0f345c2d.gradio.live/)!
 
 ## Acknowledgment 
