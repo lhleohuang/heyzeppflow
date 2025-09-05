@@ -1,6 +1,9 @@
 # "Hey Zepp Flow" Wake Word Detectation
 
 ## Acknowledgment 
+Try it [here](https://cce7b0c85f0f345c2d.gradio.live/)!
+
+## Acknowledgment 
 This repo is based on OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. Users should refer to the former for details on running the model for inference (in python), the latter for details on the training process, and how live streaming works with the model.
 
 ## Install 
