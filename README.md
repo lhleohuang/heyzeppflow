@@ -1,7 +1,7 @@
 # "Hey Zepp Flow" Wake Word Detectation
 
 ## Demo 
-Try it [here](https://cce7b0c85f0f345c2d.gradio.live/)!
+Try it [here](https://huggingface.co/spaces/lhleohuang/hey_zepp_flow)!
 
 ## Introduction
 This is a simple wake word detection model trained using TensorFlow Lite on synthetic voice data. It is so light-weight that you can run it on your smartwatch – the model is only 60 kb!
