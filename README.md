@@ -7,7 +7,7 @@ Try it [here](https://huggingface.co/spaces/lhleohuang/hey_zepp_flow)!
 This is a simple wake word detection model trained using TensorFlow Lite on synthetic voice data. It is so light-weight that you can run it on your smartwatch – the model is only 60 kb!
 
 ## Acknowledgment 
-This repo is based on OHF-Voice/pymicro-wakeword. Our Tensorflow Lite voice model is trained using kahrendt/microWakeWord. Users should refer to the former for details on running the model for inference (in python), the latter for details on the training process, and how live streaming works with the model.
+This repo is inspired by OHF-Voice/pymicro-wakeword and kahrendt/microWakeWord.
 
 ## Install 
 
